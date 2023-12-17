@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vores Anbefalinger</title>
+    <link rel="icon" href="img/favicon.webp">
+    <script src="js/navbar.js" defer></script>
+    <script src="js/opskrifter.js" defer></script>
+    <link rel="stylesheet" href="css/opskrifter.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-links">
+            <ul>
+                <li><a href="bryggeriet.html">Bryggeriet</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </div>
+        <div class="brand-title"><a href="index.html">TrøjborgBryg</a></div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="opskrifter.html">Opskrifter</a></li>
+                <li><a href="om-os.html">Om Os</a></li>
+            </ul>
+        </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+    </nav>
+    <hr>
+
+    <main>
+        <!-- Opskrifter -->
+        <article class="opskrift-artikel">
+                <h1>Øl behøver ikke kun være noget man drikker.</h1>
+                <p>Vælg en af vores 4 øl, så har vi 2 super lækre madopskrifter du kan lave med dem</p>
+
+            <!-- Billeder der henviser til de forskellige sektioner med opskrifter -->
+            <div class="pictures">
+                <a  href="#" onclick="return false;"><img src="img/ipa-can.png" alt="TrøjborgBryg IPA" onclick="showOpskrifter('opskrifter-1')"></a>
+                <a  href="#" onclick="return false;"><img src="img/sour-can.webp" alt="TrøjborgBryg Sour" onclick="showOpskrifter('opskrifter-2')"></a>
+                <a  href="#" onclick="return false;"><img src="img/pilsner-can.webp" alt="TrøjborgBryg Pilsner" onclick="showOpskrifter('opskrifter-3')"></a>
+                <a  href="#" onclick="return false;"><img src="img/dubbel-can.png" alt="TrøjborgBryg Dubbel" onclick="showOpskrifter('opskrifter-4')"></a>
+            </div>
+
+            <!-- IPA opskrifter -->
+            <section class="opskrifter-1">
+                <a href="#"><figure>
+                    <img src="img/kylling-ipa-opskrift.webp" alt="kylling opskrift" loading="lazy">
+                    <figcaption>Kylling i IPA-Marinade</figcaption>
+                </figure></a>
+
+                <a href="#"><figure>
+                   <img src="img/reje-ipa-opskrift.webp" alt="reje opskrift" loading="lazy">
+                    <figcaption>Tigerrejer med IPA-Vinegarette</figcaption>
+                </figure></a>
+            </section>
+
+            <!-- Sour opskrifter -->
+            <section class="opskrifter-2" style="display: none;">
+                <a href="#"><figure>
+                    <img src="img/kage-sour-opskrift.webp" alt="kage opskrift">
+                    <figcaption>Cheesecake med sour-jordbærgelé</figcaption>
+                </figure></a>
+
+                <a href="#"><figure>
+                    <img src="img/taerte-sour-opskrift.webp" alt="tærte opskrift">
+                    <figcaption>Blåbærtærte med Sour-fyld</figcaption>
+                </figure></a>
+            </section>
+
+            <!-- Pilsner opskrifter -->
+            <section class="opskrifter-3" style="display: none;">
+                <a href="#"><figure>
+                    <img src="img/fish-n-chips-pilsner-opskrift.webp" alt="fish n chips opskrift">
+                    <figcaption>Fish n' Chips i Pilsner-panering</figcaption>
+                </figure></a>
+
+                <a href="#"><figure>
+                    <img src="img/risotto-pilsner-opskrift.webp" alt="risotto opskrift">
+                    <figcaption>Risotto med Pilsner</figcaption>
+                </figure></a>
+            </section>
+
+            <!-- Dubbel opskrifter -->
+            <section class="opskrifter-4" style="display: none;">
+                <a href="#"><figure>
+                    <img src="img/kage-dubbel-opskrift.webp" alt="chokoladekage opskrift">
+                    <figcaption>Dubbel-Chokoladekage</figcaption>
+                </figure></a>
+
+                <a href="#"><figure>
+                    <img src="img/shortrib-dubbel-opskrift.webp" alt="short ribs opskrift">
+                    <figcaption>Short Rib Tacos braiseret med dubbel</figcaption>
+                </figure></a>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#">Nyheder</a></li>
+                <li><a href="om-os.html">Om Os</a></li>
+                <li><a href="#">Kontakt Os</a></li>
+                <li><a href="#">Vores Team</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <!-- Fontawesome Javascript -->
+    <script src="https://kit.fontawesome.com/410264dd86.js" crossorigin="anonymous"></script>
+
+    <!-- Javascript så href="#" på billederne ikke omdirigerer brugeren til toppen af siden -->
+    <script>
+        document.getElementById('myLink').addEventListener('click', function(event) {
+          event.preventDefault();
+        });
+      </script>
+</body>
+</html>

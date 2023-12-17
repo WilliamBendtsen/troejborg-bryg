@@ -1,0 +1,384 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Futura Lt BT;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width: .5em;
+}
+
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 100vw;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    flex-wrap: wrap;
+}
+
+.brand-title a{
+    font-size: 2.5rem;
+    margin: .5rem;
+    display: flex;
+    align-self: center;
+    font-family: Lobster;
+    color: #84641F;
+    text-decoration: none;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover{
+    text-decoration: underline;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* Videoen og tilhørende tekst */
+.intro video{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.intro video:hover{
+    filter: brightness(50%);
+    transition: .5s;
+}
+
+.intro-tekst{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    pointer-events: none;
+}
+
+#artikel1-link a{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 2rem;
+    color: white;
+}
+
+#artikel1-link a:hover{
+    text-decoration: underline;
+}
+
+#artikel2-link a{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    font-size: 2em;
+    color: white;
+}
+
+#artikel2-link a:hover{
+    text-decoration: underline;
+}
+
+/* Sektion med udvalg af øl */
+#udvalg{
+    display: flex;
+    margin-top: 10rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#udvalg img{
+    width: 13rem;
+}
+
+#udvalg figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 25%;
+}
+
+.udvalg-items{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.smag-cirkel{
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+#udvalg figcaption{
+    font-size: 2rem;
+}
+
+.beskrivelse-smag{
+    border: solid 1px;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    list-style: none;
+}
+
+.smag-cirkel img{
+    height: auto;
+}
+
+
+/* Processen */
+#proces{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rem;
+}
+
+#proces h2{
+    font-size: 4rem;
+    left: 27%;
+    top: 230%;
+}
+
+#proces h3{
+    position: absolute;
+    font-size: 3rem;
+    left: 34%;
+    top: 340%;
+}
+
+.brygning-proces{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brygning-proces p{
+    font-size: 1.5rem;
+    max-width: 42.5%;
+    text-align: center;
+}
+
+.brygning-proces img{
+    width: 50rem;
+}
+
+.processer{
+    display: flex;
+}
+
+.proces-1,
+.proces-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13rem;
+    flex-direction: column;
+    max-width: 50%;
+    font-size: 2rem;
+}
+
+.proces-1 p{
+    font-size: 2rem;
+    max-width: 65%;
+    text-align: center;
+}
+.proces-2 p{
+    font-size: 2rem;
+    max-width: 65%;
+    text-align: center;
+}
+
+.proces-1 img,
+.proces-2 img{
+    width: auto;
+    height: 25rem;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+}
+
+footer hr{
+    border: solid 1px;
+}
+
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+}
+
+.social-icons a i{
+    font-size: 2em;
+    opacity: 75%;
+}
+
+.social-icons a:hover i{
+    transition: .5s;
+    opacity: 100%;
+}
+
+.footer-nav{
+    margin: 30px 0;
+}
+
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer-nav ul li a{
+    color: black;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: .7;
+    transition: .5s;
+}
+
+.footer-nav ul li a:hover{
+    opacity: 1;
+}
+
+/* Media Query for mobiler (Iphone 14 Pro Max) */
+@media (max-width: 430px){
+    /* Navbar */
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .toggle-button{
+        display: flex;
+        top: 1.5rem;
+    }
+
+    .navbar{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brand-title{
+        order: -1;
+        align-self: center;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    /* Videoen og tilhørende tekst */
+    .intro video{
+        height: 93vh;
+        width: auto;
+        right: 120%;
+        filter: brightness(50%);
+    }
+
+    .intro-tekst{
+        left: 0;
+    }
+
+    #artikel1-link a{
+        left: 0;
+        right: 0;
+        top: 27rem;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    #artikel2-link a{
+        right: 0;
+        left: 0;
+        font-size: 1.8rem;
+        top: 40rem;
+        text-align: center;
+    }
+
+    /* Sektion med udvalg af øl */
+    #udvalg{
+        flex-direction: column;
+        gap: 6rem;
+    }
+
+
+    #proces h2{
+        position: relative;
+    }
+}

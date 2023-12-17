@@ -1,0 +1,327 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Futura Lt BT;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width: .5em;
+}
+
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 100vw;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    flex-wrap: wrap;
+}
+
+.brand-title a{
+    font-size: 2.5rem;
+    margin: .5rem;
+    display: flex;
+    align-self: center;
+    font-family: Lobster;
+    color: #84641F;
+    text-decoration: none;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover{
+    text-decoration: underline;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* Produkt teaser */
+.teaser{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.teaser img{
+    height: auto;
+    width: 40rem;
+}
+
+.picture-content{
+    align-self: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.picture-content p{
+    font-size: 1.2rem;
+}
+
+.picture-content h1{
+    font-size: 2rem;
+}
+
+.btn{
+font-family: montserrat;
+font-weight: 100;
+font-size: 16px;
+color: #fff;
+background-color: #84641F;
+padding: 10px 30px;
+border: solid #ffffff 2px;
+border-radius: 50px;
+cursor: pointer;
+}
+
+.btn:hover{
+transition : .5s;
+padding: 10px 29px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #000000;
+border: solid 2px #84641F;
+}
+
+/* Hvad skal vores næste øl smage af? */
+.naeste-oel{
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.naeste-oel img{
+    width: 20rem;
+}
+
+.submit{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbox input{
+    height: 10rem;
+    width: 40rem;
+}
+
+#kommentar{
+    width: 43rem;
+}
+
+#submit{
+    width: 10rem;
+    height: 3rem;
+    top: 60%;
+    margin-left: 2rem;
+    font-family: montserrat;
+    font-weight: 100;
+    font-size: 16px;
+    color: #fff;
+    background-color: #84641F;
+    padding: 10px 30px;
+    border: solid #ffffff 2px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    transition : .5s;
+    padding: 10px 29px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #000000;
+    border: solid 2px #84641F;   
+}
+
+/* Footer */
+footer{
+    width: 100%;
+}
+
+footer hr{
+    border: solid 1px;
+}
+
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+}
+
+.social-icons a i{
+    font-size: 2em;
+    opacity: 75%;
+}
+
+.social-icons a:hover i{
+    transition: .5s;
+    opacity: 100%;
+}
+
+.footer-nav{
+    margin: 30px 0;
+}
+
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer-nav ul li a{
+    color: black;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: .7;
+    transition: .5s;
+}
+
+.footer-nav ul li a:hover{
+    opacity: 1;
+}
+
+/* Media Query for mobiler (Iphone 14 Pro Max) */
+@media (max-width: 430px){
+    /* Navbar */
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .toggle-button{
+        display: flex;
+        top: 1.5rem;
+    }
+
+    .navbar{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brand-title{
+        order: -1;
+        align-self: center;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    /* Produkt teaser */
+    .teaser{
+        flex-direction: column-reverse;
+        height: 50rem;
+        justify-content: center;
+    }
+
+    .teaser img{
+        width: 100%;
+    }
+
+    /* Hvad skal vores næste øl smage af? */
+    .naeste-oel{
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .naeste-oel h2{
+        font-size: 1.43rem;
+        font-weight: 1000;
+    }
+
+    .naeste-oel p{
+        font-size: 1rem;
+    }
+
+    .naeste-oel img{
+        width: 100%;
+        height: 20rem;
+    }
+
+    .submit{
+        position: relative;
+        width: 80%;
+        left: 0;
+    }
+
+    #kommentar{
+        width: 100%;
+    }
+
+    #submit{
+        position: relative;
+        margin: 0;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TrøjborgBryg er et eksklusivt alkoholfrit i Aarhus N, fokuseret på forfriskende og smagsfulde øloplevelser. Prøv vores unikke alkoholfrie IPA, Sour, Pilsner og Dubbel øl">
+    <title>Forside</title>
+    <link rel="icon" href="img/favicon.webp">
+    <script src="js/navbar.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-links">
+            <ul>
+                <li><a href="bryggeriet.html">Bryggeriet</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </div>
+        <div class="brand-title"><a href="index.html">TrøjborgBryg</a></div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="opskrifter.html">Opskrifter</a></li>
+                <li><a href="om-os.html">Om Os</a></li>
+            </ul>
+        </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+    </nav>
+    <hr>
+<main>
+    <!-- Produkt teaser -->
+    <section class="teaser">
+        <div class="picture-content">
+        <h1>Samme smag, bare uden alkohol.</h1>
+        <p>Vi giver dig øl der kan nydes af alle og enhver, på alle tidspunkter af døgnet</p>
+        <button class="btn" onclick="redirectToPage()">Læs mere her</button>
+        </div>
+        <picture>
+            <img src="img/oel-forside.png" alt="TrøjborgBryg Ny Øl">
+        </picture>
+    </section>
+
+    <!-- Hvad skal vores næste øl smage af? -->
+    <section class="naeste-oel">
+        <picture>
+            <img src="img/questionmark-can.webp" alt="TrøjborgBryg Øl Anbefaling">
+        </picture>
+        <div class="submit">
+            <h2>Hvad skal vores næste øl smage af?</h2>
+            <p>Fortæl os lidt om din yndlingssmag, så kan det være at det kommer i vores næste øl!</p>
+            <div class="textbox">
+                <label for="kommentar">
+                    <textarea name="kommentar" id="kommentar" cols="30" rows="10" placeholder="Skriv Her..."></textarea>
+                </label>
+                <input id="submit" type="submit">
+            </div>
+        </div>
+    </section>
+</main> 
+
+<!-- Footer -->
+<footer>
+    <hr>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="footer-nav">
+        <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="#">Nyheder</a></li>
+            <li><a href="om-os.html">Om Os</a></li>
+            <li><a href="#">Kontakt Os</a></li>
+            <li><a href="#">Vores Team</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Javascript så 'Læs mere her' knappen henviser brugeren til webshoppen -->
+<script>
+    function redirectToPage() {
+        window.location.href = 'bryggeriet.html';
+    }
+</script>
+
+<!-- Fontawesome Javascript -->
+<script src="https://kit.fontawesome.com/410264dd86.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

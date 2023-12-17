@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="icon" href="img/favicon.webp">
+    <script src="js/navbar.js" defer></script>
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-links">
+            <ul>
+                <li><a href="bryggeriet.html">Bryggeriet</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </div>
+        <div class="brand-title"><a href="index.html">TrøjborgBryg</a></div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="opskrifter.html">Opskrifter</a></li>
+                <li><a href="om-os.html">Om Os</a></li>
+            </ul>
+        </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+    </nav>
+    <hr>
+
+    <main>
+        <h1>Vores produkter.</h1>
+
+        <!-- Filtre -->
+        <div class="filter">
+            <h2>Sortér efter:</h2>
+
+            <label for="filter1">Kategori:</label>
+            <select name="filter 1" id="filter1">
+                <option value="Popularitet">Popularitet</option>
+                <option value="Seneste">Seneste</option>
+                <option value="Pris: Høj-Lav">Pris: Høj-Lav</option>
+                <option value="Pris: Lav-Høj">Pris: Lav-Høj</option>
+            </select>
+            
+            <label for="filter2">Øltype:</label>
+            <select name="filter 2" id="filter2">
+                <option value="IPA">IPA</option>
+                <option value="Sour">Sour</option>
+                <option value="Pilsner">Pilsner</option>
+                <option value="Dubbel">Dubbel</option>
+            </select>
+
+            <label for="filter3">Mængde:</label>
+            <select name="filter 3" id="filter3">
+                <option value="1x50cl">1x50cl</option>
+                <option value="10x33cl">6x33cl</option>
+            </select>
+
+            <button>Sortér</button>
+        </div>
+        <!-- Alle produkterne -->
+        <section class="shop">
+
+            <!-- 1x50cl IPA -->
+            <div class="produkter-1">
+                <figure>
+                    <img src="img/ipa-can.png" alt="ipa 1x50">
+                    <figcaption>59 kr.</figcaption>
+                </figure>
+                <p>1x50 cl IPA 0,0%</p>
+                <button>Køb</button>
+            </div>
+
+            <!-- 1x50cl Sour -->
+            <div class="produkter-1">
+                <figure>
+                    <img src="img/sour-can.webp" alt="sour 1x50">
+                    <figcaption>59 kr.</figcaption>
+                </figure>
+                <p>1x50 cl Sour 0,0%</p>
+                <button>Køb</button>
+            </div>
+
+            <!-- 1x50cl Pilsner -->
+            <div class="produkter-1">
+                <figure>
+                    <img src="img/pilsner-can.webp" alt="pilsner 1x50">
+                    <figcaption>59 kr.</figcaption>
+                </figure>
+                <p>1x50 cl Pilsner 0,0%</p>
+                <button>Køb</button>
+            </div>
+
+            <!-- 1x50cl Dubbel -->
+            <div class="produkter-1">
+                <figure>
+                    <img src="img/dubbel-can.png" alt="dubbel 1x50">
+                    <figcaption>59 kr.</figcaption>
+                </figure>
+                <p>1x50 cl Dubbel 0,0%</p>
+                <button>Køb</button>
+            </div>
+
+            <!-- 6x33cl IPA -->
+            <div class="produkter-2">
+                <figure>
+                    <img src="img/ipa-beer-holder.webp" alt="ipa 6x33" loading="lazy">
+                    <figcaption>299 kr.</figcaption>
+                </figure>    
+                <p>6x33 cl IPA 0,0%</p>
+                <button>Køb</button>
+            </div>
+
+            <!-- 6x33cl Sour -->
+            <div class="produkter-2">
+                <figure>
+                    <img src="img/sour-beer-holder.webp" alt="sour 6x33" loading="lazy">
+                    <figcaption>299 kr.</figcaption>
+                </figure>
+                <p>6x33 cl Sour 0,0%</p>
+                <button>Køb</button>
+            </div>
+
+            <!-- 6x33 Pilsner -->
+            <div class="produkter-2">
+                <figure>
+                    <img src="img/pilsner-beer-holder.webp" alt="pilsner 6x33" loading="lazy">
+                    <figcaption>299 kr.</figcaption>
+                </figure>
+                <p>6x33 cl Pilsner 0,0%</p>
+                <button>Køb</button>
+            </div>
+
+            <!-- 6x33 Dubbel -->
+            <div class="produkter-2">
+                <figure>
+                    <img src="img/dubbel-beer-holder.webp" alt="dubbel 6x33" loading="lazy">
+                    <figcaption>299 kr.</figcaption>
+                </figure>
+                <p>6x33 cl Dubbel 0,0%</p>
+                <button>Køb</button>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#">Nyheder</a></li>
+                <li><a href="om-os.html">Om Os</a></li>
+                <li><a href="#">Kontakt Os</a></li>
+                <li><a href="#">Vores Team</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Fontawesome Javascript -->
+    <script src="https://kit.fontawesome.com/410264dd86.js" crossorigin="anonymous"></script>
+</body>
+</html>
