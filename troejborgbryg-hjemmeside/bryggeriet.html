@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TrøjborgBryg er et alkoholfrit bryggeri i Aarhus N, fokuseret på smagsfulde og unikke øloplevelser">
     <title>Bryggeriet</title>
     <link rel="icon" href="img/favicon.webp">
     <script src="https://kit.fontawesome.com/410264dd86.js" crossorigin="anonymous"></script>
+    <!-- Javascript til at gøre navbar responsive -->
     <script src="js/navbar.js" defer></script>
     <link rel="stylesheet" href="css/bryggeriet.css">
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- Responsive Navbar -->
     <nav class="navbar">
         <div class="navbar-links">
             <ul>
@@ -21,7 +23,7 @@
         <div class="brand-title"><a href="index.html">TrøjborgBryg</a></div>
         <div class="navbar-links">
             <ul>
-                <li><a href="opskrifter.html">Opskrifter</a></li>
+                <li><a href="vores-oel-i-mad.html">Vores øl i mad</a></li>
                 <li><a href="om-os.html">Om Os</a></li>
             </ul>
         </div>
@@ -32,7 +34,7 @@
         </a>
     </nav>
 
-    <!-- Alt content efter navbaren -->
+    <!-- Indholdet mellem navbar og footer -->
     <main>
         <!-- Video samt links til artiklerne -->
         <section class="intro">
@@ -40,72 +42,73 @@
                 <source src="video/intro-bryggeriet.mp4">
                 Der var en fejl ift. indlæsningen af videoen
             </video>
-            <div class="intro-tekst">
-                <h1>Velkommen til Bryggeriet!</h1>
-                <p>Hvad vil du helst lære om?</p>
-            </div>
-            <p class="hover-trigger" id="artikel1-link"><a href="#udvalg">Vores udvalg af øl</a></p>
-            <p class="hover-trigger"  id="artikel2-link"><a href="#proces">Hvordan vores øl bliver brygget</a></p>
+                <p class="hover-trigger" id="artikel1-link"><a href="#udvalg">Vores udvalg af øl</a></p>
+                <p class="hover-trigger" id="artikel2-link"><a href="#proces">Hvordan vores øl bliver brygget</a></p>
+
         </section>
 
         <!-- Vores Nuværende Udvalg -->
         <article id="udvalg">
-            <!-- <h2>Vores nuværende udvalg</h2> -->
-            <section class="udvalg-items">
+
+            <!-- IPA -->
+            <div class="udvalg-items">
                 <figure>
                     <img src="img/ipa-can.png" alt="TrøjborgBryg IPA">
                     <figcaption>IPA</figcaption>
                 </figure>
                 <div class="beskrivelse-smag">
-                    <p>Kendt for sin markante humlesmag og aroma, der kan have noter af citrus, fyrretræ, og blomster. IPA'er kan variere i smag og farve, men de har typisk en tydelig bitterhed.</p>
+                    <p>Kendt for sin markante humlesmag og aroma, der kan have noter af citrus, fyrretræ, og blomster. Vores IPA læner sig mere til den blomstrede side, men den har stadig sin ikoniske bitterhed.</p>
                 </div>
                 <div class="smag-cirkel">
                     <img src="img/bitter.webp" alt="bitter">
                     <img src="img/frisk.webp" alt="frisk">
                 </div>
-            </section>
+            </div>
 
-            <section class="udvalg-items">
+            <!-- Sour -->
+            <div class="udvalg-items">
                 <figure>
-                    <img src="img/sour-can.webp" alt="TrøjborgBryg Sour">
+                    <img src="img/sour-can.png" alt="TrøjborgBryg Sour">
                     <figcaption>Sour</figcaption>
                 </figure>
                 <div class="beskrivelse-smag">
-                    <p>En sours unikke smag opnås enten gennem fermentering med sure bakterier eller tilsætning af frugt. Sours kan variere fra lette til mere komplekse smagsoplevelser.</p>
+                    <p>Vores sours unikke smag opnås enten gennem fermentering med sure bakterier eller tilsætning af frugt. Sours kan variere fra lette til mere komplekse smagsoplevelser, hvor vores læner sig mere mod den komplekse side.</p>
                 </div>
                 <div class="smag-cirkel">
                     <img src="img/syrlig.webp" alt="syrlig">
                     <img src="img/frugtig.webp" alt="frugtig">
                 </div>
-            </section>
+            </div>
 
-            <section class="udvalg-items">
+            <!-- Pilsner -->
+            <div class="udvalg-items">
                 <figure>
-                    <img src="img/pilsner-can.webp" alt="TrøjborgBryg Pilsner">
+                    <img src="img/pilsner-can.png" alt="TrøjborgBryg Pilsner">
                     <figcaption>Pilsner</figcaption>
                 </figure>
                 <div class="beskrivelse-smag">
-                    <p>En let og forfriskende lagerøl. Kendt for sin lyse, gyldne farve og afbalancerede humlesmag. Pilsnere er ofte let drikkelige og har en ren, tør finish.</p>
+                    <p>En let og forfriskende lagerøl. Kendt for sin lyse, gyldne farve og afbalancerede humlesmag. Vores pilsner er let drikkelige og har en ren, tør finish. En perfekt øl for en nybegynder</p>
                 </div>
                 <div class="smag-cirkel">
                     <img src="img/mild.webp" alt="mild">
                     <img src="img/ren.webp" alt="ren">
                 </div>
-            </section>
+            </div>
 
-            <section class="udvalg-items">
+            <!-- Dubbel -->
+            <div class="udvalg-items">
                 <figure>
                     <img src="img/dubbel-can.png" alt="TrøjborgBryg Dubbel">
                     <figcaption>Dubbel</figcaption>
                 </figure>
                 <div class="beskrivelse-smag">
-                    <p>Dubbels har ofte noter af mørke frugter som rosiner, krydderier og let karamel. De er typsik kendt for at have komplekse smagsnoter, men stadig en tydelig sødme i smagen.</p>
+                    <p>Dubbels har ofte noter af mørke frugter som rosiner, krydderier og let karamel. De er typsik kendt for at have komplekse, men stadig søde smagsnoter. Vores dubbel tager udgangspunkt i den søde karamel-smag</p>
                 </div>
                 <div class="smag-cirkel">
                     <img src="img/soed.webp" alt="sød">
                     <img src="img/fyldig.webp" alt="fyldig">
                 </div>
-            </section>
+            </div>
         </article>
 
         <!-- Hvordan brygger vi vores øl? -->
@@ -115,7 +118,6 @@
                 <img src="img/brygning-proces.webp" alt="Brygning Proces">
                 <p>Brygningsprocessen er næsten helt ens med processen når man laver normale øl, der er bare lige et par enkelte ting der skal ændres i processen, før vi kan fjerne alt alkoholen fra øllene</p>
             </div>
-            
 
             <h3>Hvordan fjerner vi alkoholen?</h3>
 
@@ -123,13 +125,13 @@
                 <div class="proces-1">
                     <h4>Udkogning af alkoholen</h4>
                     <img src="img/boiling.webp" alt="Kogning">
-                    <p>Den første metode vi bruger til at fjerne alkoholen fra vores øl, er at koge alkoholen fra. Da alkohol har et lavere kogepunkt end vand, kan vi fordampe alkoholen, uden at påvirke smagen på øllen. Ligesom hvis man fx. laver en bolognese med vin, så beholder vi stadig smagen fra øllen, men sørger for at alt alkoholen er fordampet inden vi fortsætter processen</p>
+                    <p>Den første metode vi bruger til at fjerne alkoholen fra vores øl, er at koge alkoholen fra. Da alkohol har et lavere kogepunkt end vand, kan vi fordampe alkoholen, uden at påvirke smagen på øllen. Ligesom hvis man laver en bolognese med vin, så beholder vi stadig smagen fra øllen, men sørger for at alt alkohol er fordampet <br> <br></p>
                 </div>
     
                 <div class="proces-2">
                     <h4>Gær med lav alkoholprocent</h4>
-                    <img src="img/low-alcohol-yeast.webp" alt="Lav alkoholprocent gær">
-                    <p>Den anden metode vi bruger itl at fjerne alkoholen fra vores øl, er at bruge gærstammer der producerer en mindre alkoholprocent. Dette fjerner ikke alkoholen lige så effektivt som kogningen, men vores komplekse smage som fx. vores dubbel, mister noget af smagen ved at blive kogt, så der bruger vi denne metode i stedet</p>
+                    <img src="img/yeast.webp" alt="Lav alkoholprocent gær">
+                    <p>Den anden metode vi bruger til at fjerne alkoholen fra vores øl, er at bruge gærstammer der i sig selv producerer mindre alkohol. Dette fjerner ikke alkoholen lige så effektivt som kogningen, men vores komplekse smage som fx. vores dubbel, mister noget af smagen ved at blive kogt, så der bruger vi denne metode i stedet <br> <br></p>
                 </div>
             </section>
         </article>

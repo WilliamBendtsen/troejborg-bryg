@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TrøjborgBryg er et eksklusivt alkoholfrit i Aarhus N, fokuseret på forfriskende og smagsfulde øloplevelser. Prøv vores unikke alkoholfrie IPA, Sour, Pilsner og Dubbel øl">
+    <meta name="description" content="TrøjborgBryg er et alkoholfrit bryggeri i Aarhus N, fokuseret på smagsfulde og unikke øloplevelser">
     <title>Forside</title>
     <link rel="icon" href="img/favicon.webp">
+    <!-- Javascript til at gøre navbar responsive -->
     <script src="js/navbar.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Responsive Navbar -->
     <nav class="navbar">
         <div class="navbar-links">
             <ul>
@@ -20,7 +22,7 @@
         <div class="brand-title"><a href="index.html">TrøjborgBryg</a></div>
         <div class="navbar-links">
             <ul>
-                <li><a href="opskrifter.html">Opskrifter</a></li>
+                <li><a href="vores-oel-i-mad.html">Vores øl i mad</a></li>
                 <li><a href="om-os.html">Om Os</a></li>
             </ul>
         </div>
@@ -31,12 +33,14 @@
         </a>
     </nav>
     <hr>
+
+    <!-- Indholdet mellem navbar og footer -->
 <main>
     <!-- Produkt teaser -->
     <section class="teaser">
         <div class="picture-content">
         <h1>Samme smag, bare uden alkohol.</h1>
-        <p>Vi giver dig øl der kan nydes af alle og enhver, på alle tidspunkter af døgnet</p>
+        <p>Vi laver øl der kan nydes af alle og enhver, på alle tidspunkter af døgnet</p>
         <button class="btn" onclick="redirectToPage()">Læs mere her</button>
         </div>
         <picture>
@@ -82,7 +86,7 @@
     </div>
 </footer>
 
-<!-- Javascript så 'Læs mere her' knappen henviser brugeren til webshoppen -->
+<!-- Javascript så 'Læs mere her' knappen henviser brugeren til "bryggeriet.html" -->
 <script>
     function redirectToPage() {
         window.location.href = 'bryggeriet.html';

@@ -1,3 +1,4 @@
+/* Generel CSS for hele siden */
 *{
     box-sizing: border-box;
 }
@@ -19,7 +20,7 @@ body{
     border-radius: 100vw;
 }
 
-/* Navbar */
+/* Responsive Navbar */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -88,14 +89,15 @@ main h1{
 .filter{
     margin-top: 10rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
 
 .filter h2{
-    position: absolute;
-    top: 40%;
+    width: 100%;
+    text-align: center;
     font-size: 2rem;
 }
 
@@ -124,7 +126,8 @@ main h1{
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
-    padding: 10px 5%;
+    justify-content: center;
+    margin-top: 5rem;
 }
 
 .produkter-1{
@@ -263,8 +266,7 @@ footer hr{
 
 /* Media Query for mobiler (Iphone 14 Pro Max) */
 @media (max-width: 430px){
-
-    /* Navbar */
+    /* Responsive Navbar */
     .navbar-links{
         display: none;
         width: 100%;
@@ -304,10 +306,20 @@ footer hr{
         display: flex;
     }
 
-    /* Shoppen */
+    /* Filtre */
+    main h1{
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+
     .filter{
-        flex-direction: column;
+        flex-wrap: wrap;
         margin: 0;
+        gap: 1.5rem;
+    }
+
+    .filter label{
+        font-size: 1.5rem;
     }
 
     .filter h2{
@@ -319,9 +331,10 @@ footer hr{
     #filter2,
     #filter3,
     #filter4{
-        width: 25%;
+        width: 100%;
         height: 3rem;
         align-self: center;
+        text-align: center;
     }
 
     .filter button{
@@ -329,10 +342,236 @@ footer hr{
         align-self: center;
     }
 
+    /* Shoppen */
     .shop{
         flex-direction: column;
         align-items: center;
-        flex-wrap: nowrap;
+        margin-top: 5rem;
     }
 
+    .produkter-1{
+        width: 100%;
+    }
+
+    .produkter-1 img{
+        width: auto;
+        height: 20rem;
+    }
+
+    .produkter-2{
+        width: 100%;
+    }
+
+    .produkter-2 img{
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-nav ul{
+        gap: 1rem;
+        justify-content: left;
+    }
+
+    .footer-nav ul li a{
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+/* Media Query for større mobiler/mindre tablets */
+@media (min-width: 431px) and (max-width: 820px){
+    /* Responsive Navbar */
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .toggle-button{
+        display: flex;
+        top: 1.5rem;
+    }
+
+    .navbar{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brand-title{
+        order: -1;
+        align-self: center;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+    
+     /* Filtre */
+     main h1{
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+
+    .filter{
+        margin: 0;
+        gap: 1rem;
+    }
+
+    .filter label{
+        font-size: 1.5rem;
+    }
+
+    .filter h2{
+        position: relative;
+        text-align: center;
+    }
+
+    #filter1,
+    #filter2,
+    #filter3,
+    #filter4{
+        height: 3rem;
+        align-self: center;
+        text-align: center;
+    }
+
+    .filter button{
+        align-self: center;
+    }
+
+    /* Shoppen */
+    .shop{
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .produkter-1{
+        width: 49%;
+    }
+
+    .produkter-1 img{
+        width: auto;
+        height: 30rem;
+    }
+
+    .produkter-2{
+        width: 85%;
+    }
+
+    .produkter-2 img{
+        width: 100%;
+    }
+}
+
+/* Media Query for tablets (iPad Pro) */
+@media (min-width: 821px) and (max-width: 1024px){
+    /* Responsive Navbar */
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .toggle-button{
+        display: flex;
+        top: 1.5rem;
+    }
+
+    .navbar{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brand-title{
+        order: -1;
+        align-self: center;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    /* Filtre */
+    main h1{
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+
+    .filter{
+        margin: 0;
+        gap: 2rem;
+    }
+
+    .filter label{
+        font-size: 1.5rem;
+    }
+
+    .filter h2{
+        position: relative;
+        text-align: center;
+    }
+
+    #filter1,
+    #filter2,
+    #filter3,
+    #filter4{
+        height: 3rem;
+        align-self: center;
+        text-align: center;
+    }
+
+    .filter button{
+        align-self: center;
+    }
+
+    /* Shoppen */
+    .shop{
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .produkter-1{
+        width: 47%;
+    }
+
+    .produkter-1 img{
+        width: auto;
+        height: 30rem;
+    }
+
+    .produkter-2{
+        width: 85%;
+    }
+
+    .produkter-2 img{
+        width: 100%;
+    }
 }

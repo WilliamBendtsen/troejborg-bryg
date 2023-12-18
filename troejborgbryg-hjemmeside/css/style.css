@@ -1,3 +1,4 @@
+/* Generel CSS for hele siden */
 *{
     box-sizing: border-box;
 }
@@ -18,7 +19,7 @@ body{
     border-radius: 100vw;
 }
 
-/* Navbar */
+/* Responsive Navbar */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -188,7 +189,6 @@ footer hr{
     border: solid 1px;
 }
 
-
 .social-icons{
     display: flex;
     justify-content: center;
@@ -234,9 +234,9 @@ footer hr{
     opacity: 1;
 }
 
-/* Media Query for mobiler (Iphone 14 Pro Max) */
+/* Media Query for mobiler (iPhone 14 Pro Max) */
 @media (max-width: 430px){
-    /* Navbar */
+    /* Responsive Navbar */
     .navbar-links{
         display: none;
         width: 100%;
@@ -290,7 +290,7 @@ footer hr{
     /* Hvad skal vores næste øl smage af? */
     .naeste-oel{
         width: 100%;
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 3rem;
         justify-content: center;
         align-items: center;
@@ -323,5 +323,127 @@ footer hr{
     #submit{
         position: relative;
         margin: 0;
+    }
+
+    /* Footer */
+    .footer-nav ul{
+        gap: 1rem;
+        justify-content: left;
+   }
+
+    .footer-nav ul li a{
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+/* Media Query for større mobiler/mindre tablets */
+@media (min-width: 431px) and (max-width: 820px){
+    /* Responsive Navbar */
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .toggle-button{
+        display: flex;
+        top: 1.5rem;
+    }
+
+    .navbar{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brand-title{
+        order: -1;
+        align-self: center;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    } 
+
+    /* Produkt teaser */
+    .teaser img{
+        width: 100%;
+    }
+
+    /* Hvad skal vore næste øl smage af? */
+
+    .naeste-oel{
+        gap: 2rem;
+    }
+
+    .naeste-oel img{
+        position: relative;
+        width: 70%;
+    }
+
+    .submit{
+        width: 50%;
+    }
+
+    #kommentar{
+        width: 30rem;
+    }
+}
+
+
+/* Media Query for store tablets (iPad Pro) */
+@media (min-width: 821px) and (max-width: 1024px){
+    /* Responsive Navbar */
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .toggle-button{
+        display: flex;
+        top: 1.5rem;
+    }
+
+    .navbar{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brand-title{
+        order: -1;
+        align-self: center;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
     }
 }
